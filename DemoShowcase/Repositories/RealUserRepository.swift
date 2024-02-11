@@ -14,11 +14,9 @@ final class RealUserRepository: UserRepository {
     func fetchUsers() async throws -> [User] {
         let cachedUsers = try await localUserRepository.fetchUsers()
         if !cachedUsers.isEmpty {
-            print("Used cache")
             return cachedUsers
         }
         
-        print("Used network")
         let users = try await remoteUserRepository.fetchUsers()
         try await saveUsers(users)
         return users

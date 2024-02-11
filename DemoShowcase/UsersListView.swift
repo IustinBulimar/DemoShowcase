@@ -74,5 +74,8 @@ struct UsersListView: View {
 }
 
 #Preview {
-    UsersListView()
+    Dependencies[RemoteUserRepository.self] = StubbedRemoteUserRepository()
+    Dependencies[LocalUserRepository.self] = StubbedLocalUserRepository()
+    Dependencies[UserRepository.self] = RealUserRepository()
+    return UsersListView()
 }

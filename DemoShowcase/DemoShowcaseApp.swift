@@ -22,7 +22,8 @@ struct DemoShowcaseApp: App {
     
     func insertDependencies() {
         Dependencies[RemoteUserRepository.self] = StubbedRemoteUserRepository()
-        Dependencies[LocalUserRepository.self] = StubbedLocalUserRepository()
+        Dependencies[LocalUserRepository.self] = RealLocalRepository()
         Dependencies[UserRepository.self] = RealUserRepository()
+        
     }
 }

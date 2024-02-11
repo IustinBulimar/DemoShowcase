@@ -23,6 +23,9 @@
 		D1E065C62B78E83900302B24 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065C52B78E83900302B24 /* Errors.swift */; };
 		D1E065C82B78EAA200302B24 /* RealUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065C72B78EAA200302B24 /* RealUserRepository.swift */; };
 		D1E065CA2B78F32600302B24 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065C92B78F32600302B24 /* UsersViewModel.swift */; };
+		D1E065CD2B79007C00302B24 /* DemoShowcase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1E065CB2B79007C00302B24 /* DemoShowcase.xcdatamodeld */; };
+		D1E065CF2B7900EC00302B24 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065CE2B7900EC00302B24 /* UserEntity.swift */; };
+		D1E065D12B79012700302B24 /* RealLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065D02B79012700302B24 /* RealLocalRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,9 @@
 		D1E065C52B78E83900302B24 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		D1E065C72B78EAA200302B24 /* RealUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealUserRepository.swift; sourceTree = "<group>"; };
 		D1E065C92B78F32600302B24 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		D1E065CC2B79007C00302B24 /* DemoShowcase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoShowcase.xcdatamodel; sourceTree = "<group>"; };
+		D1E065CE2B7900EC00302B24 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		D1E065D02B79012700302B24 /* RealLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealLocalRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +134,9 @@
 		D1E065AE2B78E41300302B24 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				D1E0659F2B78E24000302B24 /* UserRepository.swift */,
-				D1E065A92B78E39F00302B24 /* RemoteUserRepository.swift */,
-				D1E065AB2B78E3D900302B24 /* LocalUserRepository.swift */,
-				D1E065C72B78EAA200302B24 /* RealUserRepository.swift */,
+				D1E065D32B79614D00302B24 /* UserRepository */,
+				D1E065D22B79612C00302B24 /* LocalRepository */,
+				D1E065D42B79615D00302B24 /* RemoteRepository */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -152,6 +157,34 @@
 				D1E065B82B78E5D200302B24 /* UserRepositoryTests.swift */,
 			);
 			path = DemoShowcaseTests;
+			sourceTree = "<group>";
+		};
+		D1E065D22B79612C00302B24 /* LocalRepository */ = {
+			isa = PBXGroup;
+			children = (
+				D1E065AB2B78E3D900302B24 /* LocalUserRepository.swift */,
+				D1E065D02B79012700302B24 /* RealLocalRepository.swift */,
+				D1E065CE2B7900EC00302B24 /* UserEntity.swift */,
+				D1E065CB2B79007C00302B24 /* DemoShowcase.xcdatamodeld */,
+			);
+			path = LocalRepository;
+			sourceTree = "<group>";
+		};
+		D1E065D32B79614D00302B24 /* UserRepository */ = {
+			isa = PBXGroup;
+			children = (
+				D1E0659F2B78E24000302B24 /* UserRepository.swift */,
+				D1E065C72B78EAA200302B24 /* RealUserRepository.swift */,
+			);
+			name = UserRepository;
+			sourceTree = "<group>";
+		};
+		D1E065D42B79615D00302B24 /* RemoteRepository */ = {
+			isa = PBXGroup;
+			children = (
+				D1E065A92B78E39F00302B24 /* RemoteUserRepository.swift */,
+			);
+			path = RemoteRepository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +290,7 @@
 				D1E065A22B78E29200302B24 /* User.swift in Sources */,
 				D1E065CA2B78F32600302B24 /* UsersViewModel.swift in Sources */,
 				D1E065942B78E08000302B24 /* UsersListView.swift in Sources */,
+				D1E065D12B79012700302B24 /* RealLocalRepository.swift in Sources */,
 				D1E065C82B78EAA200302B24 /* RealUserRepository.swift in Sources */,
 				D1E065C42B78E81100302B24 /* UserMock.swift in Sources */,
 				D1E065AA2B78E39F00302B24 /* RemoteUserRepository.swift in Sources */,
@@ -265,7 +299,9 @@
 				D1E065C22B78E73B00302B24 /* StubbedLocalUserRepository.swift in Sources */,
 				D1E065A42B78E30D00302B24 /* Dependencies.swift in Sources */,
 				D1E065C02B78E72F00302B24 /* StubbedRemoteUserRepository.swift in Sources */,
+				D1E065CD2B79007C00302B24 /* DemoShowcase.xcdatamodeld in Sources */,
 				D1E065AC2B78E3D900302B24 /* LocalUserRepository.swift in Sources */,
+				D1E065CF2B7900EC00302B24 /* UserEntity.swift in Sources */,
 				D1E065A02B78E24000302B24 /* UserRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -533,6 +569,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D1E065CB2B79007C00302B24 /* DemoShowcase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D1E065CC2B79007C00302B24 /* DemoShowcase.xcdatamodel */,
+			);
+			currentVersion = D1E065CC2B79007C00302B24 /* DemoShowcase.xcdatamodel */;
+			path = DemoShowcase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D1E065862B78E08000302B24 /* Project object */;
 }
