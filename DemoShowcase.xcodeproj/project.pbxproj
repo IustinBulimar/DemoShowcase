@@ -28,6 +28,8 @@
 		D1E065D12B79012700302B24 /* RealLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065D02B79012700302B24 /* RealLocalRepository.swift */; };
 		D1E065D62B7965B200302B24 /* RealRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065D52B7965B200302B24 /* RealRemoteRepository.swift */; };
 		D1E065D92B79666100302B24 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065D82B79666100302B24 /* NetworkService.swift */; };
+		D1E065DB2B79698F00302B24 /* UsersViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065DA2B79698F00302B24 /* UsersViewModelTests.swift */; };
+		D1E065DD2B796B6C00302B24 /* StubbedUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065DC2B796B6C00302B24 /* StubbedUserRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,8 @@
 		D1E065D02B79012700302B24 /* RealLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealLocalRepository.swift; sourceTree = "<group>"; };
 		D1E065D52B7965B200302B24 /* RealRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealRemoteRepository.swift; sourceTree = "<group>"; };
 		D1E065D82B79666100302B24 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D1E065DA2B79698F00302B24 /* UsersViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModelTests.swift; sourceTree = "<group>"; };
+		D1E065DC2B796B6C00302B24 /* StubbedUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubbedUserRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +153,7 @@
 		D1E065B12B78E44300302B24 /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				D1E065DC2B796B6C00302B24 /* StubbedUserRepository.swift */,
 				D1E065BF2B78E72F00302B24 /* StubbedRemoteUserRepository.swift */,
 				D1E065C12B78E73B00302B24 /* StubbedLocalUserRepository.swift */,
 				D1E065C32B78E81100302B24 /* UserMock.swift */,
@@ -160,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				D1E065B82B78E5D200302B24 /* UserRepositoryTests.swift */,
+				D1E065DA2B79698F00302B24 /* UsersViewModelTests.swift */,
 			);
 			path = DemoShowcaseTests;
 			sourceTree = "<group>";
@@ -305,6 +311,7 @@
 				D1E065D62B7965B200302B24 /* RealRemoteRepository.swift in Sources */,
 				D1E065CA2B78F32600302B24 /* UsersViewModel.swift in Sources */,
 				D1E065942B78E08000302B24 /* UsersListView.swift in Sources */,
+				D1E065DD2B796B6C00302B24 /* StubbedUserRepository.swift in Sources */,
 				D1E065D92B79666100302B24 /* NetworkService.swift in Sources */,
 				D1E065D12B79012700302B24 /* RealLocalRepository.swift in Sources */,
 				D1E065C82B78EAA200302B24 /* RealUserRepository.swift in Sources */,
@@ -327,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E065B92B78E5D200302B24 /* UserRepositoryTests.swift in Sources */,
+				D1E065DB2B79698F00302B24 /* UsersViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

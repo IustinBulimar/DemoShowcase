@@ -17,11 +17,11 @@ extension User {
                     status: Status.allCases.randomElement()!)
     }
     
-    static func createMock(id: Int) -> User {
+    static func createMock(id: Int, status: Status = .active) -> User {
         return User(id: id,
                     name: "User NRr\(id)",
                     email: "Email\(id)",
                     gender: .male,
-                    status: .active)
+                    status: status)
     }
 }
