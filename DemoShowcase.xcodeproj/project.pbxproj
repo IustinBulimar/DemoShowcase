@@ -26,6 +26,8 @@
 		D1E065CD2B79007C00302B24 /* DemoShowcase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D1E065CB2B79007C00302B24 /* DemoShowcase.xcdatamodeld */; };
 		D1E065CF2B7900EC00302B24 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065CE2B7900EC00302B24 /* UserEntity.swift */; };
 		D1E065D12B79012700302B24 /* RealLocalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065D02B79012700302B24 /* RealLocalRepository.swift */; };
+		D1E065D62B7965B200302B24 /* RealRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065D52B7965B200302B24 /* RealRemoteRepository.swift */; };
+		D1E065D92B79666100302B24 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065D82B79666100302B24 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		D1E065CC2B79007C00302B24 /* DemoShowcase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DemoShowcase.xcdatamodel; sourceTree = "<group>"; };
 		D1E065CE2B7900EC00302B24 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		D1E065D02B79012700302B24 /* RealLocalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealLocalRepository.swift; sourceTree = "<group>"; };
+		D1E065D52B7965B200302B24 /* RealRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealRemoteRepository.swift; sourceTree = "<group>"; };
+		D1E065D82B79666100302B24 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +138,7 @@
 		D1E065AE2B78E41300302B24 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				D1E065D72B79665000302B24 /* NetworkService */,
 				D1E065D32B79614D00302B24 /* UserRepository */,
 				D1E065D22B79612C00302B24 /* LocalRepository */,
 				D1E065D42B79615D00302B24 /* RemoteRepository */,
@@ -183,8 +188,17 @@
 			isa = PBXGroup;
 			children = (
 				D1E065A92B78E39F00302B24 /* RemoteUserRepository.swift */,
+				D1E065D52B7965B200302B24 /* RealRemoteRepository.swift */,
 			);
 			path = RemoteRepository;
+			sourceTree = "<group>";
+		};
+		D1E065D72B79665000302B24 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				D1E065D82B79666100302B24 /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,8 +302,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E065A22B78E29200302B24 /* User.swift in Sources */,
+				D1E065D62B7965B200302B24 /* RealRemoteRepository.swift in Sources */,
 				D1E065CA2B78F32600302B24 /* UsersViewModel.swift in Sources */,
 				D1E065942B78E08000302B24 /* UsersListView.swift in Sources */,
+				D1E065D92B79666100302B24 /* NetworkService.swift in Sources */,
 				D1E065D12B79012700302B24 /* RealLocalRepository.swift in Sources */,
 				D1E065C82B78EAA200302B24 /* RealUserRepository.swift in Sources */,
 				D1E065C42B78E81100302B24 /* UserMock.swift in Sources */,

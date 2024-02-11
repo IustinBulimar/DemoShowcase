@@ -21,9 +21,9 @@ struct DemoShowcaseApp: App {
     }
     
     func insertDependencies() {
-        Dependencies[RemoteUserRepository.self] = StubbedRemoteUserRepository()
+        Dependencies[NetworkService.self] = URLSession.shared
+        Dependencies[RemoteUserRepository.self] = RealRemoteRepository()
         Dependencies[LocalUserRepository.self] = RealLocalRepository()
         Dependencies[UserRepository.self] = RealUserRepository()
-        
     }
 }
