@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct DemoShowcaseApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            UsersListView()
         }
+    }
+    
+    init() {
+        insertDependencies()
+    }
+    
+    func insertDependencies() {
+        Dependencies[RemoteUserRepository.self] = StubbedRemoteUserRepository()
+        Dependencies[LocalUserRepository.self] = StubbedLocalUserRepository()
+        Dependencies[UserRepository.self] = RealUserRepository()
     }
 }

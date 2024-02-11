@@ -13,6 +13,11 @@ struct User: Codable, Identifiable, Equatable {
     let email: String
     let gender: Gender
     let status: Status
+    
+    var initials: String {
+        let initials = name.split(separator: " ").compactMap { $0.first }
+        return String(initials).uppercased()
+    }
 }
 
 extension User {

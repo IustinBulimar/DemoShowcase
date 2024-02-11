@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D1E065922B78E08000302B24 /* DemoShowcaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065912B78E08000302B24 /* DemoShowcaseApp.swift */; };
-		D1E065942B78E08000302B24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065932B78E08000302B24 /* ContentView.swift */; };
+		D1E065942B78E08000302B24 /* UsersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065932B78E08000302B24 /* UsersListView.swift */; };
 		D1E065962B78E08300302B24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E065952B78E08300302B24 /* Assets.xcassets */; };
 		D1E065992B78E08300302B24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E065982B78E08300302B24 /* Preview Assets.xcassets */; };
 		D1E065A02B78E24000302B24 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E0659F2B78E24000302B24 /* UserRepository.swift */; };
@@ -22,6 +22,7 @@
 		D1E065C42B78E81100302B24 /* UserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065C32B78E81100302B24 /* UserMock.swift */; };
 		D1E065C62B78E83900302B24 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065C52B78E83900302B24 /* Errors.swift */; };
 		D1E065C82B78EAA200302B24 /* RealUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065C72B78EAA200302B24 /* RealUserRepository.swift */; };
+		D1E065CA2B78F32600302B24 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E065C92B78F32600302B24 /* UsersViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +38,7 @@
 /* Begin PBXFileReference section */
 		D1E0658E2B78E08000302B24 /* DemoShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E065912B78E08000302B24 /* DemoShowcaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoShowcaseApp.swift; sourceTree = "<group>"; };
-		D1E065932B78E08000302B24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D1E065932B78E08000302B24 /* UsersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListView.swift; sourceTree = "<group>"; };
 		D1E065952B78E08300302B24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1E065982B78E08300302B24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1E0659F2B78E24000302B24 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
@@ -52,6 +53,7 @@
 		D1E065C32B78E81100302B24 /* UserMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMock.swift; sourceTree = "<group>"; };
 		D1E065C52B78E83900302B24 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		D1E065C72B78EAA200302B24 /* RealUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealUserRepository.swift; sourceTree = "<group>"; };
+		D1E065C92B78F32600302B24 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				D1E065912B78E08000302B24 /* DemoShowcaseApp.swift */,
-				D1E065932B78E08000302B24 /* ContentView.swift */,
+				D1E065932B78E08000302B24 /* UsersListView.swift */,
+				D1E065C92B78F32600302B24 /* UsersViewModel.swift */,
 				D1E065A12B78E29200302B24 /* User.swift */,
 				D1E065C52B78E83900302B24 /* Errors.swift */,
 				D1E065AE2B78E41300302B24 /* Repositories */,
@@ -252,7 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E065A22B78E29200302B24 /* User.swift in Sources */,
-				D1E065942B78E08000302B24 /* ContentView.swift in Sources */,
+				D1E065CA2B78F32600302B24 /* UsersViewModel.swift in Sources */,
+				D1E065942B78E08000302B24 /* UsersListView.swift in Sources */,
 				D1E065C82B78EAA200302B24 /* RealUserRepository.swift in Sources */,
 				D1E065C42B78E81100302B24 /* UserMock.swift in Sources */,
 				D1E065AA2B78E39F00302B24 /* RemoteUserRepository.swift in Sources */,
